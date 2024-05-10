@@ -1,0 +1,131 @@
+html
+{
+	width:100%;
+	max-width:100%;
+	overflow-x: hidden;
+}
+
+@font-face {
+	font-family: "6426";
+	src: url("fonts/6426.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "17734";
+	src: url("fonts/17734.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+Body {
+	font-family: "6426";
+	font-size: 15px;
+	color: #ffffff;
+	background: url(images/Intro.jpg) center no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-size: cover;
+	margin: 0;
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+	background-attachment: fixed;
+}
+
+*:before,
+*:after
+
+{
+	box-sizing: border-box;
+}
+
+.intro_title {
+	font-family: '17734';
+	font-size: 90px;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 1;
+	vertical-align: middle;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: black;
+}
+
+.intro_inner
+{
+	width: 100%;
+	max-width: 880px;
+    margin: 0 auto;
+}
+
+.Cotry
+{
+	font-size: 22px;
+	color: #ffffff;
+	vertical-align: top;
+	margin: 0;
+	text-decoration: none;
+	position: relative;
+}
+
+.Cotry::before
+{
+	content: '';
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	background-color: coral;
+	transition: 0.2s;
+}
+
+.Cotry:hover:before
+{
+	width: 100%;
+}
+
+.image-wrap
+{
+	width: 700px;
+	height: 450px;
+	justify-content: center;
+	display: flex;
+	vertical-align: top;
+}
+
+.gallery img {
+	margin: 5px;
+	border: 3px solid #fcb10f;
+	position: relative;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+.gallery:hover img {
+	border: 3px solid coral;
+	border-radius: 10px;
+}
+
+.photo
+{
+	height:90px;
+	cursor: pointer;
+}
+
+footer {
+	background-color: #262626;
+	width: 100%;
+	border-top: 1px solid white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-size: cover;
+	margin: 0;
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+	background-attachment: fixed;
+}
